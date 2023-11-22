@@ -1,0 +1,355 @@
+body {
+    font-family: 'Roboto', sans-serif;
+   background-image: linear-gradient(to right top, #a9a9be, #aeaec3, #b3b4c9, #b8b9ce, #bdbfd4);
+}
+
+/* Custom CSS */
+.navbar-nav .nav-link.active {
+    color: blue;
+
+}
+.navbar-nav .nav-link.active:hover {
+    color: white;
+    background: black;
+
+}
+
+    .navbar-nav .nav-link.active:after {
+        display: none;
+    }
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+  
+
+p {
+    color:black
+}
+
+h3 {
+    color: darkblue
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -1px;
+    left: 0;
+    background-color: transparent;
+    transition: all .5s ease-in-out;
+}
+
+
+.navbar-nav .nav-link:hover::after {
+    background-color: black;
+    width: 100%;
+}
+
+.nav-item a {
+    font-family: system-ui;
+    font-size: 20px;
+
+}
+
+
+
+p:first-of-type {
+    font-size: 24px;
+    font-family: fantasy;
+    font-weight: bold;
+}
+
+h1 b {
+    font-family: 'Pacifico', cursive;
+}
+
+.container p {
+    font-weight: 400;
+}
+
+.container h1 {
+    font-weight: 700;
+}
+
+.col-md-6 {
+    flex: 1 0 auto;
+    text-align: center;
+}
+
+.custom-btn1 {
+    background: none;
+    border: none;
+    color: blue;
+}
+
+.custom-btn1:hover {
+    background: black;
+    border: none;
+    color: white;
+}
+
+.banner {
+    overflow: hidden;
+    height: 100px;
+}
+
+.mt-3 {
+    font-size: 20px;
+}
+
+.cstm-container {
+    min-height: 500px;
+    margin-top: 10rem;
+}
+
+
+
+#skill-section {
+    margin-top: 10rem;
+}
+
+.section-box {
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.box {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.box h2 {
+    margin-bottom: 20px;
+}
+
+
+
+
+#work-section .row .mb-4 {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1.1);
+    border-radius: 60px;
+    padding: 100px;
+}
+
+/* additional skill animation */
+.hidden-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.visible-content {
+    max-height: 500px;
+    opacity: 1;
+    transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
+}
+
+
+/* --------------------------------- */
+
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* keyframe fade in works */
+
+
+.work-item {
+    transition: transform 0.3s ease-in-out;
+}
+
+.work-item:hover {
+    transform: scale(1.06);
+}
+
+#work-section .row {
+    display: flex;
+    justify-content: space-around;
+}
+
+#work-section .row .mb-4 {
+    margin-right: 20px;
+}
+.label{
+    display: flex;
+}
+
+
+
+
+@keyframes fillWidth {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 80%;
+    }
+}
+
+/* Apply the animation to the skill level */
+.skill-level {
+    text-align: center;
+    color: white;
+    background-color: #007bff;
+    animation: fillWidth 1s ease-in-out;
+}
+
+
+
+/* icons animation */
+
+.icon-container {
+    display: flex;
+    animation: moveBanner 10s linear infinite;
+}
+
+.icon {
+    font-size: 3rem;
+    margin: 0 1rem;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out infinite alternate;
+}
+
+@keyframes moveBanner {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* -------------------------- */
+/* education */
+.education-item button:hover {
+    color: white;
+    background-color: black;
+
+}
+
+.education-item h3 {
+    text-decoration: underline;
+}
+
+.education-item p {
+    color: black;
+}
+
+footer {
+    background-image: linear-gradient(to right top, #a9a9be, #aeaec3, #b3b4c9, #b8b9ce, #bdbfd4);
+    color: white;
+    min-height: 200px;
+
+}
+
+#footer .row {
+    padding-top: 35px;
+}
+
+.contact-me i {
+    color: black
+}
+
+.gradient-box-shadow {
+    cursor: pointer;
+    margin-top: 3rem !important;
+    color: black;
+}
+
+/* media 575px */
+@media only screen and (max-width: 575px) {
+
+
+    #work-section .row .mb-4 {
+        padding: 0px;
+        margin-right: 0px;
+    }
+}
+
+/* media-query below-381px */
+@media only screen and (max-width: 992px) {
+    .navbar-nav .nav-link.active {
+        background: none;
+        color: black;
+    }
+    
+
+    u p:first-of-type {
+        font-size: 19px;
+    }
+
+    #work-section {
+        padding: 0px;
+
+    }
+
+    .contact-me {
+        padding: 0px;
+    }
+
+    .cstm-container {
+        min-height: 0px;
+        margin-top: 0rem;
+    }
+
+    #moving-icons {
+        margin-top: 0rem !important;
+    }
+
+    .navbar-collapse {
+        width: 100%;
+        position: absolute;
+        background: beige;
+        margin-top: 294px;
+        left: 1px;
+        text-align: center;
+    }
+
+  .navbar.changed-color {
+    background-color:beige;
+  }
+  #skill-section{
+    margin-top: 0rem;
+  }
+  #extra-skill-section{
+    margin-top: 0rem;
+  }
+  
+}
+@media only screen and (max-width: 375px) {
+    #work-section .row .mb-4 {
+        border-radius: 28px;
+    }
+    }
+ 
